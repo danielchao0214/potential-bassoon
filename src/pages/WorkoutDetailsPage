@@ -1,4 +1,0 @@
-const WorkoutDetailsPage: React.FC = () => {
-  return <div></div>;
-};
-export default WorkoutDetailsPage;

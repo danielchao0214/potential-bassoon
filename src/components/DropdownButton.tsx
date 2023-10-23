@@ -28,7 +28,7 @@ const DropdownButton: React.FC<DropdownButtonProps> = ({
         <BiSolidChevronDown className="" />
       </button>
       {isDropdownOpen && (
-        <ul className="absolute left-0 w-full mt-2 bg-white border border-gray-300 rounded top-full">
+        <ul className="absolute left-0 z-20 w-full mt-2 bg-white border border-gray-300 rounded top-full">
           {items.map((item, index) => (
             <li
               key={index}
