@@ -1,49 +1,22 @@
-// import { Exercise } from "my-types";
-
 import BodyPartCard from "../components/BodyPartCard";
 import CommentCard from "../components/CommentCard";
 import Navbar from "../components/Navbar";
 
-// import axios from "axios";
-// import { exerciseOptions } from "../utils/fetchData";
-// import { useParams } from "react-router-dom";
-// import { useQuery } from "@tanstack/react-query";
-
 function ExerciseDetailsPage() {
-  // const { id } = useParams<{ id: string }>(); // Use useParams with type annotation
-
-  // const exerciseUrl = `https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`;
-
-  // const { data, error, isLoading, isError } = useQuery<Exercise, Error>(
-  //   ["exercise", id],
-  //   async () => {
-  //     const response = await axios.get<Exercise>(exerciseUrl, exerciseOptions);
-  //     return response.data;
-  //   }
-  // );
-
-  // if (isLoading) {
-  //   return <div>Loading...</div>;
-  // }
-
-  // if (isError) {
-  //   return <div>Error: {error?.message}</div>;
-  // }
-
-  // const exercise = data as Exercise;
-
   return (
     <>
       <div className="min-h-screen bg-gray-50">
         <Navbar dropdownButtonText="Exercise" />
-        <div className="flex flex-row items-center min-h-screen pt-16">
-          <div className="flex flex-col w-1/2 my-4 space-y-4">
+        <div className="flex items-center justify-center min-h-screen pt-16">
+          <div className="flex flex-col w-5/6 my-4 space-y-4 xl:w-1/3 md:w-1/2">
             <div className="w-full p-6 pb-2 mx-auto bg-white rounded-lg shadow-lg">
               {/* main card */}
               <div className="flex flex-col mb-4 space-y-1 text-center">
                 {/* title text */}
-                <h1 className="text-3xl font-semibold">Barbell Back Squat</h1>
-                <div className="text-xl">
+                <h1 className="text-base font-semibold 2xl:text-2xl xl:text-xl md:text-lg">
+                  Barbell Back Squat
+                </h1>
+                <div className="text-sm 2xl:text-xl xl:text-lg md:text-base">
                   <strong className="text-gray-700">Equipment: </strong>
                   {"Barbell, Squat Rack"}
                 </div>
@@ -53,7 +26,7 @@ function ExerciseDetailsPage() {
                 <img
                   src={"https://api.exercisedb.io/image/6gPb3n4WVbvDKS"}
                   alt={"Barbell Back Squat"}
-                  className="max-w-full border-2 border-gray-300 rounded-md"
+                  className="border-2 border-gray-300 rounded-md 2xl:w-92 xl:w-80 lg:w-68 md:w-56 w-44"
                 />
               </div>
               <div className="mb-4">
